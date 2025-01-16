@@ -1,6 +1,6 @@
 import { Head } from "@inertiajs/react";
 import { FaArrowLeft } from "react-icons/fa";
-import { LinkButtonIcon } from "@/Components/Button";
+import { LinkButtonIcon } from "@/Components/LinkButton";
 import { useState } from "react";
 import { useForm } from '@inertiajs/react'
 
@@ -25,7 +25,7 @@ const ButtonFooter = ({ disabled, setDisabled, submit }) => {
 
 const ViewCustomer = ({ customer }) => {
     const [disabled, setDisabled] = useState(true);
-    const { data, setData, post, processing } = useForm(customer)
+    const { data, setData, post, processing, isDirty } = useForm(customer)
 
     const submit = () => {
         post('/edit',

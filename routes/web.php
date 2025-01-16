@@ -10,6 +10,7 @@ Route::get('/', [CustomerHomeController::class, 'index'])->name('home');
 
 Route::controller(AddCustomerController::class)->group(function(){
     Route::get('/add', 'index');
+    Route::post('/add', 'insert');
 });
 
 Route::controller(ViewCustomerController::class)->group(function(){

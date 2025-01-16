@@ -1,6 +1,6 @@
 import Layout from '@/Layouts/Layout';
 import { Head } from '@inertiajs/react';
-import { LinkButtonIcon } from '@/Components/Button';
+import { LinkButtonIcon } from '@/Components/LinkButton';
 import { FaPlus } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import Pagination from '@/Components/Pagination';
@@ -24,6 +24,7 @@ const Home = ({customers}) => {
                                 <LinkButtonIcon href={`/view/${customer.id}`} className={'button-basic bg-[#393E46]'}>
                                     <FaArrowRight />
                                 </LinkButtonIcon>
+                                <button></button>
                             </div>
                         </div>
                     ))}
