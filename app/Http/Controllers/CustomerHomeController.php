@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class CustomerCrudController extends Controller
+class CustomerHomeController extends Controller
 {
     public function index() {
         return inertia('Home');

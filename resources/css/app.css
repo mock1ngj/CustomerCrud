@@ -13,7 +13,26 @@
         @apply block overflow-y-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#393E46] rounded-lg m-3 p-4 w-[80%] h-[80%]
     }
 
-    .button-add {
-        @apply float-right p-4 m-3 bg-[#00ADB5] rounded-lg
+    .add-card {
+        @apply block overflow-y-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#393E46] rounded-lg m-3 p-4 w-[30%] h-fit
+    }
+
+    .button-basic {
+        @apply p-4 m-3 bg-[#00ADB5] rounded-lg
+    }
+
+    .button-danger {
+        @apply p-4 m-3 bg-[#E65954] rounded-lg
+    }
+    .customer-card {
+        @apply flex justify-center bg-[#EEEEEE] rounded-lg p-4 m-3 w-full
+    }
+
+    .input-box{
+        @apply py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none 
+    }
+
+    .input-label{
+        @apply block text-sm font-medium mb-2 text-white justify-center
     }
 }
