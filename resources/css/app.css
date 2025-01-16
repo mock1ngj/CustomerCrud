@@ -13,6 +13,18 @@
         @apply block overflow-y-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#393E46] rounded-lg m-3 p-4 w-[80%] h-[80%]
     }
 
+    .modal{
+        @apply z-40 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full
+    }
+
+    .modal-foreground{
+        @apply z-40 bg-black absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-70 w-full h-full
+    }
+
+    .modal-content{
+        @apply z-50 overflow-y-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#EEEEEE] rounded-lg m-3 p-4 w-fit h-fit
+    }
+
     .card-fit {
         @apply block overflow-y-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#393E46] rounded-lg m-3 p-4 w-[30%] h-fit
     }

@@ -1,6 +1,6 @@
 import { Head } from "@inertiajs/react";
 import { FaArrowLeft } from "react-icons/fa";
-import { LinkButtonIcon } from "@/Components/LinkButton";
+import { LinkButtonIcon } from "@/Components/ButtonIcon";
 import { useState } from "react";
 import { useForm } from '@inertiajs/react'
 
