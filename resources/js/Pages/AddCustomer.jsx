@@ -1,19 +1,17 @@
 import { Head } from "@inertiajs/react";
-import { Link } from "@inertiajs/react";
 import { FaArrowLeft } from "react-icons/fa";
-import { IconContext } from "react-icons";
+import { LinkButtonIcon } from "@/Components/Button";
+
 const AddCustomer = () => {
     return (
         <>
             <Head title="Add Customer" />
-            <div className="add-card">
+            <div className="card-fit">
                 <div className="flex-row">
                     <div className="flex">
-                        <Link href="/" className="button-basic">
-                            <IconContext.Provider value={{ color: 'white', size: '1rem' }}>
-                                <FaArrowLeft />
-                            </IconContext.Provider>
-                        </Link>
+                        <LinkButtonIcon href={'/'} className={'button-basic hover:bg-[#2f8286]'}>
+                            <FaArrowLeft/>
+                        </LinkButtonIcon>
                     </div>
                     <div className="flex-col justify-center m-2">
                         <div className="inline-block w-1/2 text-center p-1">

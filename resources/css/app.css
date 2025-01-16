@@ -13,12 +13,12 @@
         @apply block overflow-y-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#393E46] rounded-lg m-3 p-4 w-[80%] h-[80%]
     }
 
-    .add-card {
+    .card-fit {
         @apply block overflow-y-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#393E46] rounded-lg m-3 p-4 w-[30%] h-fit
     }
 
     .button-basic {
-        @apply p-4 m-3 bg-[#00ADB5] rounded-lg
+        @apply p-4 bg-[#00ADB5] rounded-lg hover:bg-[#222831]
     }
 
     .link-arrow{
@@ -30,10 +30,11 @@
     }
 
     .button-danger {
-        @apply p-4 m-3 bg-[#E65954] rounded-lg
+        @apply p-4 bg-[#E65954] rounded-lg hover:bg-[#ca3833]
     }
+
     .customer-card {
-        @apply flex justify-center bg-[#EEEEEE] rounded-lg p-4 m-3 w-full
+        @apply flex justify-center bg-[#EEEEEE] rounded-lg p-10 m-3 w-full
     }
 
     .input-box{

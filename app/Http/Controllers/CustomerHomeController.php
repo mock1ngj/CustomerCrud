@@ -8,7 +8,8 @@ use Illuminate\Support\Facades\DB;
 
 class CustomerHomeController extends Controller
 {
-    public function index(Request $request)
+    //paginate data in the database
+    public function index()
     {
         $customers = DB::table('customer')->paginate(5);
         return inertia('Home', ['customers' => $customers]);
