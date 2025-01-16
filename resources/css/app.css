@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-[#222831]
+    }
+}
+
+@layer components {
+    .home-card {
+        @apply block overflow-y-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#393E46] rounded-lg m-3 p-4 w-[80%] h-[80%]
+    }
+
+    .button-add {
+        @apply float-right p-4 m-3 bg-[#00ADB5] rounded-lg
+    }
+}

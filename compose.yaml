@@ -1,0 +1,31 @@
+networks:
+  application:
+    driver: bridge
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: frontend
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+    entrypoint: ['/bin/sh', '-c']
+    command:
+      - |
+        composer install
+        php artisan storage:link
+        php artisan migrate
+        php artisan serve --host=0.0.0.0 --port=8000
+  db:
+    image: mysql
+    container_name: mysql_container
+    volumes:
+      - ./data:/var/lib/myql/data
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=1
