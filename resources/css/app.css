@@ -21,6 +21,14 @@
         @apply p-4 m-3 bg-[#00ADB5] rounded-lg
     }
 
+    .link-arrow{
+        @apply min-h-[38px] min-w-[38px] py-2 px-2.5 inline-flex justify-center items-center gap-x-2 text-sm rounded-lg text-white hover:bg-[#EEEEEE] hover:text-black focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none
+    }
+
+    .link-number{
+        @apply min-h-[38px] min-w-[38px] flex justify-center items-center text-white hover:bg-[#EEEEEE] hover:text-black py-2 px-3 text-sm rounded-lg focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none
+    }
+
     .button-danger {
         @apply p-4 m-3 bg-[#E65954] rounded-lg
     }

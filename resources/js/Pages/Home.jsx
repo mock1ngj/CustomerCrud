@@ -1,8 +1,10 @@
 import Layout from '@/Layouts/Layout';
 import { Head } from '@inertiajs/react';
 import AddButton from '@/Components/AddButton';
+import Pagination from '@/Components/Pagination';
 
-const Home = ({ }) => {
+const Home = ({customers}) => {
+    const {data, links} = customers;
     return(
         <>
             <Head title='Home'/>
@@ -11,16 +13,17 @@ const Home = ({ }) => {
                     <AddButton/>
                 </div>
                 <div className='flex-row p-3 m-3'>
-                    {[1,2,3,4,5].map((value)=>(
+                    {data.map((customer)=>(
                         <div className='customer-card'>
-                            <div className='inline-flex w-3/4 justify-center'>{value}</div>
+                            <div className='inline-flex w-3/4 justify-center'>{customer.first_name} {customer.last_name}</div>
                             <div className='inline-flex w-1/4 justify-center'>Button</div>
                         </div>
                     ))}
-                    
+                </div>
+                <div className='flex m-4 justify-center'>
+                    <Pagination links={links}/>
                 </div>
             </div>
-            
         </>
     )
 }

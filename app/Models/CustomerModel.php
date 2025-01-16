@@ -12,11 +12,12 @@ class CustomerModel extends Model
     use HasFactory;
     protected $table = 'customer';
     protected $primaryKey = 'id';
+    public $timestamps = false;
 
     protected $fillable = [
         'first_name',
         'last_name',
         'email',
-        'contact_no'
+        'contact_no',
     ];
 }
